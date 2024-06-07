@@ -1,11 +1,14 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Pacifico", cursive;
     margin: 0;
     padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url("image2.jpg");
     background-color: #f0f0f0;
     display: flex;
 }
@@ -47,14 +50,24 @@ nav ul li a {
     width: calc(100% - 220px);
 }
 
-h1, h2 {
-    font-family: "Merriweather", serif;
+h1{
+    font-family: "Roboto", sans-serif;
     color: #010827;
+    width: 100px;
+    height: 100px;
+    
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
 }
 
 p {
-    border: 2px solid lightcoral;
-    background-color: rgb(216, 196, 171);
+    border: 2px solid rgb(8, 8, 8);
+    background-color: rgb(85, 141, 245);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
